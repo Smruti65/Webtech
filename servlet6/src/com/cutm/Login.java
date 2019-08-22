@@ -17,12 +17,12 @@ public void doPost(HttpServletRequest request, HttpServletResponse response)
     String p=request.getParameter("userPass");  
           
     if(p.equals("1234"))
-    		{  
-        RequestDispatcher rd=request.getRequestDispatcher("servlet2");  
-        rd.forward(request, response);  
-    }  
+	{  
+    	RequestDispatcher rd=request.getRequestDispatcher("servlet2");  
+    	rd.forward(request, response);  
+	}  	
     else{  
-        out.print("Sorry UserName or Password Error!");  
+        out.print("Sorry your UserName or Password invalid");  
         RequestDispatcher rd=request.getRequestDispatcher("/index.html");  
         rd.include(request, response);  
                       

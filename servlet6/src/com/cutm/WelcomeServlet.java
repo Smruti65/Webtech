@@ -12,8 +12,8 @@ public class WelcomeServlet extends HttpServlet {
     response.setContentType("text/html");  
     PrintWriter out = response.getWriter();  
           
-    String n=request.getParameter("userName");  
-    out.print("Welcome "+n);  
+    String n=request.getParameter("userName");
+    out.print("Hello,,Have a very good day... "+n);  
     }  
   
 } 

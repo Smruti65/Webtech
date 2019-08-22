@@ -1,21 +1,19 @@
-<web-app>  
- <servlet>  
-    <servlet-name>Login</servlet-name>  
-    <servlet-class>com.cutm.Login</servlet-class>  
-  </servlet>  
-  <servlet>  
-    <servlet-name>WelcomeServlet</servlet-name>  
-    <servlet-class>com.cutm.WelcomeServlet</servlet-class>  
-  </servlet>  
-  
-  
-  <servlet-mapping>  
-    <servlet-name>Login</servlet-name>  
-    <url-pattern>/servlet1</url-pattern>  
-  </servlet-mapping>  
-  <servlet-mapping>  
-    <servlet-name>WelcomeServlet</servlet-name>  
-    <url-pattern>/servlet2</url-pattern>  
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:web="http://xmlns.jcp.org/xml/ns/javaee">
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>com.cutm.Login</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>WelcomeServlet</servlet-name>
+    <servlet-class>com.cutm.WelcomeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/servlet1</url-pattern>
   </servlet-mapping>
-  
-  </web-app>
+  <servlet-mapping>
+    <servlet-name>WelcomeServlet</servlet-name>
+    <url-pattern>/servlet2</url-pattern>
+  </servlet-mapping>
+</web-app>
